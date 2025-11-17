@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/fondo.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  cursor: crosshair;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* Área clickeable sobre la puerta */
+.puerta {
+  position: absolute;
+  left: 47%;   /* ajustar según tu imagen */
+  top: 60%;
+  width: 7%;
+  height: 20%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+/* efecto de transición al entrar */
+.puerta:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.4s;
+}

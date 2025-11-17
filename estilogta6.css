@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=DynaPuff:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url(img/fonditofacha.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f0c419;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+main {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    max-width: 900px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+}
+
+main img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #f0c419;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+main p {
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.infojuego {
+    color: black;
+}
+a {
+    color: inherit;           /* Toma el color del texto del contenedor */
+    text-decoration: none;    /* Quita el subrayado */
+  }
+  
+  a:hover {
+    color: #ff0606;           /* Cambia de color al pasar el mouse (opcional) */
+    text-decoration: underline; /* O subrayado al pasar el mouse, opcional */
+  }
+      

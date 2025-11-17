@@ -1,0 +1,82 @@
+/* ===== Estilos Generales ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color:  #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  text-align: center; /* 🔹 Centra todo el texto */
+  
+}
+
+/* ===== Contenedores ===== */
+header, section, footer {
+  background: transparent
+  border-radius 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: none
+}
+
+/* ===== Encabezado ===== */
+header h1 {
+  font-size: 2.5em;
+  color: #222;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* ===== Títulos ===== */
+h2 {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* ===== Listas ===== */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul li {
+  background: transparent
+  
+  margin-bottom 8px;
+  display: inline-block; /* 🔹 Hace que se alineen en el centro */
+  width: 60%;
+}
+
+/* ===== Experiencia y educación ===== */
+.item {
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  color: #333;
+}
+
+.item span {
+  display: block;
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.9em;
+  color: #555;
+}
+

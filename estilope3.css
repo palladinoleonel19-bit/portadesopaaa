@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/atico.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.contenedor-atico {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imagen-atico {
+  width: 500%;
+  height: 500%;
+  object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
+}
+
+/* Texto superior */
+.mensaje h1 {
+  font-size: 3em;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  animation: parpadeo 1.5s infinite alternate;
+}
+
+.mensaje p {
+  font-size: 1.3em;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+/* Área clickeable invisible (por ejemplo, en el centro izquierda) */
+.zona-secreta {
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  width: 10%;
+  height: 20%;
+  background: rgba(255, 255, 255, 0); /* invisible */
+  cursor: pointer;
+}
+
+/* Imagen oculta de aparición */
+.aparicion {
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+  width: 600px;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+   object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
+
+}
+
+/* Al activarse */
+.aparicion.visible {
+  opacity: 100;
+  
+}
+
+@keyframes parpadeo {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+
+@keyframes parpadeoAparicion {
+  from { opacity: 1; filter: brightness(1); }
+  to { opacity: 0.4; filter: brightness(2); }
+}

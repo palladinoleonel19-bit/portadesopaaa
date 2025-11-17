@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ático de la Iglesia</title>
+  <link rel="stylesheet" href="estilope3.css">
+</head>
+<body>
+  <div class="mensaje">
+    <h1>El Ático Oscuro</h1>
+    <p>El silencio pesa... pero algo te observa.</p>
+  </div>
+
+  <div class="zona-secreta" id="zonaSecreta"></div>
+
+  <img src="img/bicho.png" alt="Aparición" class="aparicion" id="aparicion">
+
+  <audio id="sonidoSusto" src="audio/grito.mp3" preload="auto"></audio>
+  <script>
+    const zona = document.getElementById("zonaSecreta");
+    const aparicion = document.getElementById("aparicion");
+    const sonidoSusto = document.getElementById("sonidoSusto"); // Obtenemos el elemento de audio
+
+    zona.addEventListener("click", () => {
+      aparicion.classList.add("visible");
+      sonidoSusto.play(); // Reproducimos el sonido al hacer clic
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>LOS AUTOS DE TU VIEJA</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://www.shutterstock.com/image-illustration/asphalt-racing-track-finish-line-600nw-2012477486.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+        }
+
+        audio, video {
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            max-width: 100%;
+        }
+
+        /* Contenedor para imágenes */
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contenedor-imagenes img {
+            width: 32%;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Efecto hover en imágenes */
+        .contenedor-imagenes img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Responsive: en móviles apilar imágenes */
+        @media (max-width: 768px) {
+            .contenedor-imagenes {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contenedor-imagenes img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>MOTOR DE AUTITO REY</h2>
+
+        <!-- Audio -->
+        <audio controls>
+            <source src="img/ruido_auto.mp3" type="audio/mpeg" />
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+
+        <!-- Video -->
+        <video width="640" height="360" controls>
+            <source src="img/video_auto.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <!-- Imágenes -->
+        <div class="contenedor-imagenes">
+            <img src="img/lambo_rojo.jpg" alt="Lamborghini rojo" />
+            <img src="img/ferra_azul.jpg" alt="Ferrari azul" />
+            <img src="img/mustang_naranja.jpg" alt="Mustang naranja" />
+            <img src="img/mercedez_benz.png" alt="camionet_mercedez" />
+        </div>
+    </div>
+
+</body>
+</html>

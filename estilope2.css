@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/interioriglesia.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  cursor: crosshair;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* Área clickeable sobre las escaleras */
+.escaleras {
+  position: absolute;
+  right: 20%;   /* ajusta según la posición en tu imagen */
+  bottom: 25%;
+  width: 18%;
+  height: 40%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+.escaleras:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.4s;
+}
